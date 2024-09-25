@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="css/CSS.css">
+	<link rel="stylesheet icon" type="text/css" href="img/logo_recetario.png">
+	<title>Formulario</title>
+</head>
+<body background="img/fondo_formulario.jpg">
+
+	<header>
+		<a href="index.html"><img class="logo_header" src="img/logo_recetario_blanco.png"></a>
+	</header>
+
+	<nav>
+		<a href="index.html">Pagina Inicial</a><br/>
+		<a href="formulario.html">Formulario</a><br/>
+		<a href="recetas.html">Mis recetas</a><br/>
+		<a href="desarrolladores.html">Desarrolladores</a>
+	</nav>
+
+	<main>
+		<section class="fondo">
+			<p class="titulos">Formulario</p>
+			<p>
+			<label form="nombre">Nombre del cliente:</label>
+			<input type="text" name="nombre" maxlength="32" placeholder="Teclea tu nombre" width="35%">
+		</p>
+
+		<p>
+			<label form="telefono">Telefono:</label>
+			<input type="text" name="telefono" maxlength="10" placeholder="Teclea tu telefono" width="25%">
+		</p>
+
+		<p>
+			<label form="direccion">Direccion:</label>
+			<input type="text" name="direccion" maxlength="10" placeholder="Teclea tu direccion" width="25%">
+		</p>
+
+		<p>
+			<label for="paquete">Platillo:</label>
+			<select name="paquetes" size="1">
+				<option value="londres">Chiles rellenos</option>
+				<option value="seattle">Enchiladas de Mole</option>
+				<option value="newyork">Sopa Knorr</option>
+				<option value="newyork">Pozole</option>
+				<option value="newyork">Carne Asada</option>
+				<option value="newyork">Barbacoa</option>
+				<option value="newyork">Chilaquiles</option>
+				<option value="newyork">Tamales</option>
+				<option value="newyork">Menudo</option>
+			</select>
+		</p>
+
+		<p>
+			<label for="pago">Tipo de pago:</label><br>
+			<input type="radio" name="pago" value="Efectivo" checked>Efectivo<br>
+			<input type="radio" name="pago" value="Tarjeta">Tarjeta<br>
+		</p>
+
+		<p>
+			<label form="fecha">Fecha:</label>
+			<input type="date" name="fecha" maxlength="30" placeholder="Teclea tu fecha">
+		</p>
+		
+		<p>
+			<label for="comentarios">Descripcion y detalles:</label><br>
+			<textarea name="comentarios" rows="4" cols="40" placeholder="Teclea si tienes algún detalle"></textarea>
+		</p>
+
+		<p>
+			<input type="checkbox" name="terminos" value="terminos">
+			<label for="terminos">Acepto los términos y condiciones</label>
+		</p>
+
+		<p align="left">
+			<input type="submit" name="guardar" id="boton1" value="Enviar orden">
+			<input type="reset" name="borrar" id="boton2" value="Borrar orden">
+		</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>Recetario - Todos los derechos reservados</p>
+		<p>Álvarez Nájera Sergio Hugo</p>
+		<p>Vázquez Galdean Leslie Dayana</p>
+		<p>Maestra Alondra Zavala</p>
+		<p>CBTIS 206 - PROGRAMACION 5°A</p>
+	</footer>
+
+</body>
+</html>
